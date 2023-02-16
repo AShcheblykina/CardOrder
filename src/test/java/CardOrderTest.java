@@ -35,7 +35,7 @@ public class CardOrderTest {
         driver.findElement(By.cssSelector("input[type='tel']")).sendKeys("+79384988568");
         driver.findElement(By.tagName("label")).click();
         driver.findElement(By.cssSelector("button[type='button']")).click();
-        String expected = " Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
+        String expected = "  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
         String actual = driver.findElement(By.tagName("p")).getText();
 
         assertEquals(expected, actual);
