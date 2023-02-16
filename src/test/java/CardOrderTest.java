@@ -12,9 +12,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CardOrderTest {
     private WebDriver driver;
 
-   @BeforeAll
+    @BeforeAll
     static void setUpAll() {
-       System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
     }
 
     @BeforeEach
