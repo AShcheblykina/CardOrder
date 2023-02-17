@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CardOrderTest {
-    private WebDriver driver;
+     WebDriver driver;
 
     @BeforeAll
     static void setUpAll() {
@@ -30,7 +30,7 @@ class CardOrderTest {
     @AfterEach
     void tearnDown() {
         driver.quit();
-        driver = null;
+
     }
 
     @Test
