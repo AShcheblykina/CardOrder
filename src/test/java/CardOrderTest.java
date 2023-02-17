@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CardOrderTest {
+class CardOrderTest {
     private WebDriver driver;
 
     @BeforeAll
@@ -33,7 +33,7 @@ public class CardOrderTest {
     }
 
     @Test
-    void shouldTest1() throws InterruptedException {
+    void shouldTest1() {
         driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("input[type='text']")).sendKeys("Василий Иванов");
         driver.findElement(By.cssSelector("input[type='tel']")).sendKeys("+79384988568");
