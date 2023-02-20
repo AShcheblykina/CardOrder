@@ -41,7 +41,7 @@ class CardOrderTest {
         driver.findElement(By.tagName("label")).click();
         driver.findElement(By.cssSelector("button[type='button']")).click();
         String expected = "  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
-        String actual = driver.findElement(By.cssSelector("[data-test-id=order-success] p")).getText();
+        String actual = driver.findElement(By.cssSelector("[data-test-id=order-success] ")).getText();
 
         assertEquals(expected, actual);
 
